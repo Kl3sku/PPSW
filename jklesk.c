@@ -100,21 +100,16 @@ int main()
 	Delay(1000);
 	while(1){
 		switch(eKeyboardRead()){
-			case BUTTON_0:
-				break;
 			case BUTTON_1:
 				LedStepRight();
-				Delay(300);
 				break;
 			case BUTTON_2:
 				LedStepLeft();
-			  Delay(300);
-				break;
-			case BUTTON_3:
 				break;
 			default:
 				break;
 		}
+		Delay(300);
 	}
 
 }
